@@ -146,6 +146,11 @@ body {
 .menu-link:focus {
   color: var(--backgr-button);
 }
+.menu-item:hover {
+  background-color: var(--backgr-button);
+  height: 4px;
+  border-radius: 2px;
+}
 
 .contacts {
   font-style: normal;
