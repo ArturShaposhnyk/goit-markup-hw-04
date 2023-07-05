@@ -106,11 +106,14 @@ body {
   background-color: var(--backgr-color);
   color: var(--body-color);
 }
-
+/*---------HEADER--------- */
 .page-header {
   background-color: color #e7e9fc;
   display: flex;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -146,18 +149,23 @@ body {
 .menu-link:focus {
   color: var(--backgr-button);
 }
-.menu-item:hover {
-  background-color: var(--backgr-button);
-  height: 4px;
-  border-radius: 2px;
-}
 
 .contacts {
   font-style: normal;
   line-height: 1.5;
   margin-left: auto;
 }
-
+.menu-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: var(--backgr-button);
+  border-radius: 2px;
+}
+.menu-item:hover::after {
+  width: 100%;
+}
 .page-contact {
   display: flex;
   gap: 40px;
@@ -173,6 +181,30 @@ body {
   color: var(--backgr-button);
 }
 
+/*---------DESIGNATION--------- */
+
+.designation {
+  width: 1440px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--backgr-color);
+  background-color: var(--dark-bgr);
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
 .order-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -188,23 +220,12 @@ body {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .order-button:hover,
 .order-button:focus {
   background-color: var(--backgr-button);
-}
-
-.designation {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--backgr-color);
-  background-color: var(--dark-bgr);
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .designation-title {
@@ -219,6 +240,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*---------ADVANTAGE--------- */
 .advantage {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -232,7 +255,20 @@ body {
   justify-content: left;
   width: calc((100% - 72px) / 4);
 }
-
+.adv-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  width: 64px;
+  height: 64px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
 .title-adv {
   font-weight: 500;
   font-size: 20px;
@@ -247,6 +283,9 @@ body {
 
   line-height: 1.5;
 }
+
+/*---------OURWORK--------- */
+
 .ourwork {
   padding-bottom: 120px;
 }
@@ -268,11 +307,21 @@ body {
 .ourwork-art {
   width: calc((100% - 48px) / 3);
 }
-
+/*---------EMPLOY--------- */
 .employ {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--log-stud-col);
+}
+.empl-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  width: 40px;
+  height: 40px;
 }
 
 .employ-title {
@@ -302,6 +351,9 @@ body {
 
 .empl-card {
   padding: 32px 16px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .empl {
@@ -319,6 +371,7 @@ body {
   line-height: 1.5;
   text-align: center;
 }
+/*---------FOOTER--------- */
 
 .footerclass {
   background: var(--dark-bgr);
@@ -334,7 +387,7 @@ body {
   width: 264px;
 }
 
-/*Portfolio*/
+/*---------PORTFOLIO--------- */
 
 .fold {
   padding-top: 96px;
