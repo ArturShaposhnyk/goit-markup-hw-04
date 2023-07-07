@@ -110,7 +110,7 @@ body {
 }
 /*---------HEADER--------- */
 .page-header {
-  background-color: var(--fold-button-color)
+  background-color: color #e7e9fc;
   display: flex;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -121,6 +121,9 @@ body {
 .page-header-container {
   display: flex;
   align-items: center;
+}
+
+.page-footer-container {
 }
 
 .page-nav {
@@ -143,12 +146,11 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   display: inline-block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
-
 .menu-link:hover,
 .menu-link:focus {
-  color: #404bbf;
+  color: var(--backgr-button);
 }
 
 .contacts {
@@ -156,35 +158,37 @@ body {
   line-height: 1.5;
   margin-left: auto;
 }
-
+.menu-item {
+  position: relative;
+  color: var(--backgr-button);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .menu-item::after {
   content: "";
   display: block;
   width: 0;
   height: 4px;
-  background-color: #404bbf;
+  background-color: var(--backgr-button);
   border-radius: 2px;
   position: absolute;
-  bottom: -1px;
   left: 0;
-  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  bottom: -1px;
 }
-
 .menu-item:hover::after {
   width: 100%;
 }
-
 .page-contact {
   display: flex;
   gap: 40px;
 }
-
+.contact-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .contact-mt {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--body-color);
 }
-
 .contact-mt:hover,
 .contact-mt:focus {
   color: var(--backgr-button);
