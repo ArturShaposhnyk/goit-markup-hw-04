@@ -186,7 +186,7 @@ body {
 /*---------DESIGNATION--------- */
 
 .designation {
-  width: 1440px;
+  max-width: 1440px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -223,6 +223,7 @@ body {
   border-radius: 4px;
   margin: 0 auto;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover,
