@@ -123,9 +123,6 @@ body {
   align-items: center;
 }
 
-.page-footer-container {
-}
-
 .page-nav {
   display: flex;
   column-gap: 76px;
@@ -142,11 +139,12 @@ body {
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  color: var(--ancillary-color);
+  color: var(--backgr-button);
   padding-top: 24px;
   padding-bottom: 24px;
   display: inline-block;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -158,15 +156,9 @@ body {
   line-height: 1.5;
   margin-left: auto;
 }
-.menu-item {
-  position: relative;
-  color: var(--backgr-button);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .menu-item::after {
   content: "";
   display: block;
-  width: 0;
   height: 4px;
   background-color: var(--backgr-button);
   border-radius: 2px;
@@ -181,13 +173,12 @@ body {
   display: flex;
   gap: 40px;
 }
-.contact-item {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .contact-mt {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--body-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-mt:hover,
 .contact-mt:focus {
