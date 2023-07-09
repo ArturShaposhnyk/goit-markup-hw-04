@@ -563,7 +563,7 @@ button {
   background-color: rgba(46, 47, 66, 0.4);
 }
 
-.backdrop.hide {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
