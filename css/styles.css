@@ -474,63 +474,84 @@ button {
 
 /*---------FOOTER--------- */
 
-.footerclass {
-  background: var(--dark-bgr);
-  padding-top: 100px;
-  padding-bottom: 100px;
+.footer {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
 }
 
-.footerclass-txt {
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  color: var(--log-stud-col);
+.footer-logo {
+  display: block;
   width: 264px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.footer-sm-txt {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-  color: var(--backgr-color);
-}
-.footer-sm-container {
-  margin-left: 384px;
-  margin-top: -111px;
+  margin-right: 120px;
 }
 
-.footer-list-of-icons {
-  display: flex;
-  gap: 24px;
-  margin-top: 8px;
+.page-footer {
+  padding: 100px 0;
 }
-.footer-icon {
+
+.page-footer .link {
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  border-radius: 50%;
-  overflow: visible;
-  fill: var(--log-stud-col);
+  margin: 0 0 16px 0;
+  width: 100%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon-wrapper {
-  width: 40px;
-  height: 40px;
+.page-footer .logo-highlight {
+  color: #f4f4fd;
+}
+
+.page-footer {
+  background-color: var(--ancillary-color);
+}
+
+.footer-txt-logo {
+  color: var(--log-stud-col);
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+  justify-content: start;
+  align-items: center;
+}
+
+.footer-soc-item {
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--subsid-color);
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--subsid-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icon:hover,
-.footer-icon-wrapper:hover {
-  background-color: var(--green-color);
+
+.footer-txt-soc {
+  margin-bottom: 16px;
+  color: var(--backgr-color);
+  font-weight: 500;
+}
+
+.footer-soc-icon {
+  fill: var(--log-stud-col);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
+}
+.txt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
 }
 
 /*---------PORTFOLIO--------- */
