@@ -498,7 +498,7 @@ button {
 }
 
 .page-footer .logo-highlight {
-  color: #f4f4fd;
+  color: var(--log-stud-col);
 }
 
 .page-footer {
@@ -551,7 +551,7 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--secondary-text-color);
+  color: var(--body-color);
 }
 
 /*---------PORTFOLIO--------- */
