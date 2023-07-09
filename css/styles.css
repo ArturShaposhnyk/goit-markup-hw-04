@@ -20,7 +20,13 @@ ol {
 img {
   display: block;
 }
-
+.txt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--body-color);
+}
 body {
   color: var(--body-color);
   background-color: var(--backgr-color);
@@ -545,13 +551,6 @@ button {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #31d0aa;
-}
-.txt {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--body-color);
 }
 
 /*---------PORTFOLIO--------- */
