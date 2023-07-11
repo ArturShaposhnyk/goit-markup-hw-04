@@ -438,7 +438,7 @@ button {
 }
 
 .customer-item {
-  width: calc((100% - 168px) / 6);
+  width: calc((100% - 120px) / 6);
   height: 88px;
 }
 .second-h {
